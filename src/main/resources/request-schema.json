@@ -1,0 +1,59 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "roomSize": {
+      "$id": "/properties/roomSize",
+      "type": "array",
+      "items": {
+        "$id": "/properties/roomSize/items",
+        "type": "integer",
+        "title": "The 0th Schema ",
+        "default": 0
+      }
+    },
+    "coords": {
+      "$id": "/properties/coords",
+      "type": "array",
+      "items": {
+        "$id": "/properties/coords/items",
+        "type": "integer",
+        "title": "The 0th Schema ",
+        "default": 0,
+        "examples": [
+          1,
+          2
+        ]
+      }
+    },
+    "patches": {
+      "$id": "/properties/patches",
+      "type": "array",
+      "items": {
+        "$id": "/properties/patches/items",
+        "type": "array",
+        "items": {
+          "$id": "/properties/patches/items/items",
+          "type": "integer",
+          "title": "The 0th Schema ",
+          "default": 0,
+          "examples": [
+            1,
+            0
+          ]
+        }
+      }
+    },
+    "instructions": {
+      "$id": "/properties/instructions",
+      "type": "string",
+      "title": "The Instructions Schema ",
+      "default": "",
+      "examples": [
+        "NNESEESWNWW"
+      ]
+    }
+  }
+}

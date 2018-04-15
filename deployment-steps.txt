@@ -1,0 +1,22 @@
+#Deployment Instructions : 
+
+1.Clone the repo.
+2.Build the application with(mvn clean install) or without tests. (mvn clean install -DskipTests=true).
+3.target/RoboticHoover-1.0-SNAPSHOT.jar will be generated. 
+4.The application can be run using : java -jar RoboticHoover-1.0-SNAPSHOT.jar. 
+5.The resource would be available at : 
+
+URL : http://localhost:8080/clean
+Sample request :
+content-type : Application/JSON
+Body :
+{
+  "roomSize" : [5, 5],
+  "coords" : [1, 2],
+  "patches" : [
+    [1, 0],
+    [1, 2],
+    [2, 3]
+  ],
+  "instructions" : "NNESEESWNWW"
+}
